@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - Troque Habilidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">SkillSwap</a>
+            <ul class="nav-links">
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="php/explorar.php">Explorar</a></li>
+                <li><a href="php/login.php">Login</a></li>
+                <li><a href="php/cadastrar.php" class="btn btn-secondary">Cadastrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Troque habilidades. Aprenda de verdade.</h1>
+            <p>Conecte-se com pessoas que dominam o que você quer aprender e ensine o que você sabe.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="php/cadastrar.php" class="btn">Começar agora</a>
+                <a href="php/explorar.php" class="btn btn-secondary">Explorar habilidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">+5.000</span>
+                Usuários ativos
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">+12.000</span>
+                Aulas realizadas
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">4.9</span>
+                Avaliação média
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll para links da navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
