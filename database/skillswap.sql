@@ -1,6 +1,6 @@
 -- Criar banco de dados
 CREATE DATABASE skillswap;
-USE skillswap;;;;
+USE skillswap;
 
 -- Tabela de usuários
 CREATE TABLE usuarios (
